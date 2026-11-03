@@ -6,17 +6,17 @@ które WYŁĄCZNIE odczytuje oferty z rynku i pokazuje najniższą cenę w opisi
 To nie jest bot. Brak automatycznego kupowania, wystawiania, klikania, wypełniania formularzy.
 
 ## Etap 1 – Research (w toku)
-Gra (`game.m2clicker.com`) to SPA – z zewnątrz nie widać DOM-u ani żądań sieciowych.
-Nie zakładamy żadnego API ani struktury danych, dopóki tego nie potwierdzimy.
+Probe wykonany – szczegóły w `docs/RESEARCH.md`.
 
-Do ustalenia (na podstawie wyniku `tools/probe/probe.js`):
-1. Skąd gra bierze listę ofert rynku (DOM vs. żądania fetch/XHR vs. WebSocket)?
-2. Jak wygląda wiersz oferty (nazwa, cena, ilość, ID przedmiotu, sprzedawca)?
-3. Jak wygląda tooltip/opis przedmiotu i gdzie można dodać sekcję informacyjną?
-4. Czy rynek jest stronicowany/filtrowany (wpływa na kompletność skanu)?
-5. Jakie jest dozwolone, niskie obciążeniowo tempo odświeżania?
+Do ustalenia (brakuje próbek danych):
+1. Struktura JSON odpowiedzi `.../market/offers?sort=price_asc`.
+2. HTML pojedynczego wiersza oferty (`ul.divide-y > li`).
+3. HTML tooltipa/opisu przedmiotu.
+4. Zasady gry dot. dodatków i częstotliwości odczytu.
 
 ## Następne kroki
-- [ ] Uruchomić probe na stronie rynku i wkleić wynik (bez haseł/tokenów).
+- [x] Probe na stronie rynku.
+- [ ] Próbki: odpowiedź `market/offers`, HTML wiersza, HTML tooltipa.
+- [ ] Wybór wariantu pozyskiwania danych (A DOM / B obserwacja odpowiedzi / C własne żądania).
 - [ ] Architektura (MarketScanner, ItemMatcher, PriceAnalyzer, MarketCache, DescriptionInjector, Settings).
-- [ ] Szkielet rozszerzenia MV3 + testy parsera na zapisanych próbkach DOM.
+- [ ] Szkielet rozszerzenia MV3 + testy parsera na zapisanych próbkach.
