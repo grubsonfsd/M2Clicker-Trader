@@ -15,8 +15,9 @@ Do ustalenia (brakuje próbek danych):
 4. Zasady gry dot. dodatków i częstotliwości odczytu.
 
 ## Decyzje użytkownika
-- Bonusy przedmiotów NIE są brane pod uwagę przy porównywaniu cen (klucz porównania = `itemVnum`; `skillVnum` księg do potwierdzenia).
-- Wariant pozyskiwania danych (A/B/C): oczekuje na decyzję (rekomendacja po próbce JSON: B).
+- Bonusy przedmiotów NIE są brane pod uwagę przy porównywaniu cen. Klucz porównania = `itemVnum` + `skillVnum` (księgi umiejętności rozróżniamy).
+- Wariant pozyskiwania danych: **B** (odczyt odpowiedzi, które gra i tak pobiera).
+- Architektura: `docs/ARCHITECTURE.md` czeka na akceptację użytkownika.
 
 ## Następne kroki
 - [x] Probe na stronie rynku.

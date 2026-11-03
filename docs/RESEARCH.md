@@ -110,9 +110,10 @@ które gracz sam załadował – żaden nie daje „najniższej ceny z całego r
 Wymaga decyzji użytkownika.
 
 ## Do decyzji (z użytkownikiem)
-1. Wariant pozyskiwania danych: A / B / C (patrz wyżej).
+1. ~~Wariant pozyskiwania danych~~ – **DECYZJA użytkownika (2026-11-03): wariant B** (odczyt odpowiedzi, które gra i tak pobiera).
+   Architektura: `docs/ARCHITECTURE.md` (propozycja do akceptacji).
 2. ~~Co znaczy „ten sam przedmiot"~~ – **DECYZJA użytkownika (2026-11-03): bonusy przedmiotów (`preview.attributes`) NIE są brane pod uwagę
-   przy porównywaniu cen.** Klucz porównania = `itemVnum`. Do potwierdzenia z użytkownikiem: czy dodatkowo rozróżniać
-   `instanceMetadata.skillVnum` (vnum 50300 występuje z różnymi wartościami – najpewniej różne księgi umiejętności).
+   przy porównywaniu cen.** Klucz porównania = `itemVnum` + `instanceMetadata.skillVnum` (gdy
+   występuje). Użytkownik potwierdził (2026-11-03): księgi umiejętności MUSZĄ być rozróżniane – ważne przy wystawianiu ich na rynek.
    Skoro bonusy są pomijane, w opisie warto zaznaczyć, że cena dotyczy przedmiotów o tym samym numerze niezależnie od bonusów.
 3. Co pokazujemy, gdy widzimy tylko część rynku (np. jedną stronę): sekcja musi to jasno komunikować (zasada: brak danych != cena zero).
