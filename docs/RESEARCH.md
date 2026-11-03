@@ -66,11 +66,30 @@ Konsekwencje dla ItemMatchera (to ważne):
 - Klucz porównania ofert wymaga decyzji z użytkownikiem (patrz „Do decyzji").
 - Mapowania `itemVnum` -> nazwa NIE ma w odpowiedzi API. Nazwę widać w DOM (np. "Łuk+0"). Nie próbujemy czytać `items.enc`.
 
+## Próbka: tooltip przedmiotu (`samples/tooltip.html`, 2026-11-03)
+Wynik `tooltip-probe.js`; dwa tooltipy (zbroja i przedmiot sztukowy). Obserwacje:
+- Tooltip jest renderowany w **portalu Base UI** (`div[data-base-ui-portal]`, id typu `_r_5me_`) dopiero po najechaniu,
+  poza `li` oferty. Wewnątrz: wrapper `position: fixed` (`role="presentation"`, `data-side="right"`, `z-40`,
+  `pointer-events-none`) -> `div` powierzchni (`_surface_..._preview_...`) -> `div` opisu (`_description_...`).
+- Zawartość `_description_`: nazwa (`div._name_`), opcjonalnie `p` "Od poziomu: N", `ul[aria-label="Podstawowe wartości przedmiotu"]`,
+  `ul[aria-label="Bonusy wbudowane"]` (`li[data-negative]` dla ujemnych), blok wymagań (`div._requirements_`: "[ Do ubrania ]",
+  klasa, "Niespełnione wymagania"), opis fabularny (`div._itemDescription_`), "Liczba sztuk: N".
+- Atrybut `data-unavailable="true"` na `_description_` oznacza niespełnione wymagania postaci.
+- Nazwa w tooltipie jest skrócona ("Burzowa Zbroj. Płyt.+0") i zawiera poziom ulepszenia. W tooltipie NIE MA `itemVnum` ani ceny.
+- Klasy z hashami (`_name_1hhh9_31`, `_surface_1hhh9_2`...) są generowane przez bundler i mogą się zmienić po aktualizacji gry.
+  Stabilniejsze punkty zaczepienia: `data-base-ui-portal`, `role="presentation"`, `aria-label` list, atrybuty `data-*`.
+- Nie wiadomo (do sprawdzenia przy implementacji): jak powiązać otwarty tooltip z konkretnym wierszem/ofertą (w próbce trigger
+  ma `aria-expanded="false"` i brak `aria-describedby`), czy dodanie elementu do tooltipa zmieni jego pozycję/rozmiar
+  (pozycjonowanie robi biblioteka), i czy React nie usunie dopisanego elementu przy ponownym renderze.
+- Probe nie pokazał, jak tooltip wyświetla `preview.attributes` (bonusy dodatkowe, np. `ATTBONUS_UNDEAD`) ani `sockets`;
+  próbka obejmuje tylko przedmioty bez bonusów dodatkowych.
+
 ## Nieznane (blokuje implementację)
 1. ~~Struktura JSON odpowiedzi `market/offers`~~ – rozpoznana (patrz wyżej). Nieznane: nazwy parametrów zapytania
    (kursor, filtr przedmiotu/typu/bonusu, rozmiar strony) – tylko z żądań, które gra sama wysyła.
 2. ~~Struktura wiersza oferty w DOM~~ – rozpoznana (patrz wyżej); w DOM nie ma `itemVnum`, ale jest w odpowiedzi API.
-3. Struktura tooltipa/opisu przedmiotu (miejsce na sekcję "INFORMACJE O RYNKU").
+3. ~~Struktura tooltipa/opisu przedmiotu~~ – rozpoznana (patrz wyżej). Nieznane: powiązanie tooltipa z wierszem oferty
+   oraz zachowanie przy dopisaniu własnej sekcji (pozycjonowanie, ponowny render).
 4. ~~Czy `market/offers` zwraca cały rynek~~ – NIE, zwraca stronę 30 ofert z kursorem. Nieznane: ile jest stron i czy gra
    filtruje po stronie serwera (filtry typu/bonusu w UI sugerują, że tak).
 5. Zasady gry dot. dodatków/skryptów i dopuszczalnej częstotliwości odczytu.

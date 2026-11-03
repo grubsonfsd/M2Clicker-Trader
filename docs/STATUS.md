@@ -16,7 +16,7 @@ Do ustalenia (brakuje próbek danych):
 
 ## Następne kroki
 - [x] Probe na stronie rynku.
-- [ ] Próbki: odpowiedź `market/offers` (jest: `samples/market-offers.json`), HTML wiersza (jest: `samples/offer-row.html`), HTML tooltipa (brak).
+- [ ] Próbki: odpowiedź `market/offers` (jest: `samples/market-offers.json`), HTML wiersza (jest: `samples/offer-row.html`), HTML tooltipa (jest: `samples/tooltip.html`). Brakuje jeszcze adresów żądań z filtrem i kursorem (nazwy parametrów).
 - [ ] Wybór wariantu pozyskiwania danych (A DOM / B obserwacja odpowiedzi / C własne żądania).
 - [ ] Architektura (MarketScanner, ItemMatcher, PriceAnalyzer, MarketCache, DescriptionInjector, Settings).
 - [ ] Szkielet rozszerzenia MV3 + testy parsera na zapisanych próbkach.
