@@ -16,7 +16,7 @@ Do ustalenia (brakuje próbek danych):
 
 ## Następne kroki
 - [x] Probe na stronie rynku.
-- [ ] Próbki: odpowiedź `market/offers`, HTML wiersza, HTML tooltipa.
+- [ ] Próbki: odpowiedź `market/offers` (brak), HTML wiersza (jest: `samples/offer-row.html`), HTML tooltipa (brak).
 - [ ] Wybór wariantu pozyskiwania danych (A DOM / B obserwacja odpowiedzi / C własne żądania).
 - [ ] Architektura (MarketScanner, ItemMatcher, PriceAnalyzer, MarketCache, DescriptionInjector, Settings).
 - [ ] Szkielet rozszerzenia MV3 + testy parsera na zapisanych próbkach.
