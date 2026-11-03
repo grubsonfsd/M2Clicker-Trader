@@ -1,258 +1,161 @@
-# M2CLICKER TRADER – PROJECT INSTRUCTIONS
+# CLAUDE.md – M2Clicker Market Scanner
 
-## 1. Rola i cel projektu
+## 1. Cel projektu
 
-Jesteś doświadczonym programistą, architektem oprogramowania, analitykiem rynku gier MMORPG oraz specjalistą od algorytmów handlowych.
+Tworzymy dodatek (rozszerzenie przeglądarkowe) do gry M2Clicker.
 
-Twoim zadaniem jest zaprojektowanie i stworzenie zaawansowanego systemu TRADER dla gry przeglądarkowej M2Clicker:
+Głównym zadaniem aplikacji jest skanowanie rynku w grze w celu znalezienia najniższej aktualnej ceny wybranego przedmiotu i wyświetlenia tej informacji bezpośrednio w opisie przedmiotu.
 
-https://game.m2clicker.com/
+Aplikacja ma pełnić wyłącznie funkcję informacyjną i analityczną.
 
-Gra jest inspirowana światem Metin2.
+**Nie jest to bot ani narzędzie automatyzujące rozgrywkę.**
 
-Głównym celem jest analizowanie rynku, identyfikowanie niedowartościowanych przedmiotów oraz maksymalizowanie zysków z handlu.
+## 2. Najważniejsze założenia
 
-Nie twórz prostego skryptu. Zaprojektuj inteligentny system handlowy, który podejmuje decyzje na podstawie danych rynkowych.
+Aplikacja:
+- Odczytuje informacje o przedmiotach wystawionych na rynku.
+- Analizuje dostępne oferty.
+- Rozpoznaje przedmioty na podstawie ich nazwy i, jeśli to możliwe, identyfikatora.
+- Wyszukuje najniższą cenę danego przedmiotu.
+- Wyświetla najniższą znalezioną cenę w opisie przedmiotu.
+- Informuje o liczbie znalezionych ofert.
+- Pokazuje czas ostatniej aktualizacji danych.
+- Nie ingeruje w mechanikę gry.
 
-## 2. Samodzielny wybór technologii i architektury
+## 3. Bezwzględne ograniczenia
 
-Nie narzucam Ci formy działania programu.
+Aplikacja NIE MOŻE:
+- Automatycznie kupować przedmiotów.
+- Automatycznie wystawiać przedmiotów na sprzedaż.
+- Automatycznie licytować.
+- Automatycznie wykonywać transakcji.
+- Automatycznie klikać przycisków w grze.
+- Automatycznie wypełniać formularzy.
+- Wysyłać poleceń do gry powodujących działania w imieniu gracza.
+- Sterować postacią.
+- Automatyzować żadnych czynności związanych z rozgrywką.
 
-Samodzielnie:
+Dopuszczalne jest wyłącznie odczytywanie danych, ich przetwarzanie i prezentowanie wyników.
 
-- Przeanalizuj możliwości techniczne gry.
-- Sprawdź dostępne mechanizmy handlu i funkcjonowanie targu.
-- Zidentyfikuj dostępne źródła danych rynkowych.
-- Oceń możliwości techniczne pozyskiwania i aktualizacji danych.
-- Wybierz najlepszą architekturę i technologie.
-- Zaproponuj odpowiedni interfejs użytkownika.
-- Zadbaj o wydajność, stabilność i możliwość dalszego rozwoju.
+## 4. Główna funkcjonalność – skaner rynku
 
-Rozważ różne warianty techniczne i wybierz rozwiązanie zapewniające największą skuteczność, niezawodność oraz wygodę użytkowania.
+Skaner powinien:
+1. Odczytywać dostępne oferty na rynku.
+2. Pobierać nazwę przedmiotu.
+3. Pobierać cenę przedmiotu.
+4. Rozpoznawać przedmioty tego samego typu.
+5. Porównywać ceny wszystkich dostępnych ofert danego przedmiotu.
+6. Wybierać najniższą znalezioną cenę.
+7. Przekazywać wynik do interfejsu użytkownika.
 
-## 3. Główne funkcje TRADERA
+W przypadku wielu ofert tego samego przedmiotu należy zawsze wskazywać najniższą prawidłową cenę.
 
-### A. Analiza rynku
+Nie wolno traktować braku danych jako ceny zerowej.
 
-System powinien analizować możliwie pełną listę przedmiotów dostępnych na targu.
+Jeśli skanowanie nie obejmuje całego rynku, aplikacja musi jasno informować, że wynik dotyczy wyłącznie dostępnych danych.
 
-Dla każdego przedmiotu powinien zbierać i analizować:
+## 5. Wyświetlanie informacji w opisie przedmiotu
 
-- Nazwę przedmiotu.
-- Aktualną najniższą cenę.
-- Kolejne dostępne ceny.
-- Liczbę ofert.
-- Dostępną ilość przedmiotów.
-- Historię zaobserwowanych cen.
-- Zmiany cen w czasie.
-- Różnice między poszczególnymi ofertami.
-- Warianty i parametry przedmiotów, jeśli mają wpływ na ich wartość.
+Najważniejszym elementem dodatku jest integracja z interfejsem gry.
 
-Nie traktuj najniższej ceny jako automatycznie prawdziwej wartości rynkowej.
+Po rozpoznaniu przedmiotu aplikacja powinna dodać do jego opisu dodatkową sekcję informacyjną.
 
-### B. Wykrywanie okazji handlowych
+Przykładowy wygląd:
 
-To najważniejsza funkcja projektu.
+--------------------------------
+INFORMACJE O RYNKU
 
-System powinien wykrywać przedmioty wystawione zdecydowanie poniżej ich rzeczywistej wartości rynkowej.
+Najniższa cena: 125 000 Yang
+Liczba ofert: 17
+Ostatnia aktualizacja: 10:42:15
 
-Przykład:
+--------------------------------
 
-- Średnia cena rynkowa: 100 000 000 Yang.
-- Najniższa aktualna oferta: 35 000 000 Yang.
-- Potencjalna różnica: 65 000 000 Yang.
+Jeśli nie znaleziono ofert:
 
-System powinien:
+INFORMACJE O RYNKU
 
-1. Wykryć ofertę.
-2. Porównać ją z aktualnym rynkiem.
-3. Sprawdzić historię cen.
-4. Ocenić, czy różnica jest rzeczywistą okazją.
-5. Uwzględnić koszty transakcji.
-6. Obliczyć potencjalny zysk.
-7. Przedstawić rekomendację zakupu.
+Brak dostępnych ofert.
 
-### C. Inteligentna wycena
+Jeśli dane są nieaktualne:
 
-Nie używaj wyłącznie najniższej ceny.
+INFORMACJE O RYNKU
 
-Opracuj algorytm wyceny wykorzystujący:
+Najniższa cena: 125 000 Yang
+Dane mogą być nieaktualne.
 
-- Medianę cen.
-- Średnią ważoną.
-- Liczbę konkurencyjnych ofert.
-- Rozkład cen.
-- Historię zmian cen.
-- Płynność rynku.
-- Nietypowe skoki cenowe.
+Wygląd sekcji powinien pasować do stylistyki interfejsu M2Clicker.
 
-Algorytm powinien rozpoznawać przypadki, w których jedna oferta znacząco zaniża lub zawyża obraz rynku.
+## 6. Aktualizacja danych
 
-### D. Kalkulator opłacalności
+Skaner powinien umożliwiać:
+- Ręczne odświeżenie danych.
+- Automatyczne odświeżanie danych rynkowych w określonych odstępach czasu, o ile jest to zgodne z zasadami gry i dozwolonym sposobem odczytu danych.
+- Zapamiętywanie ostatnich wyników w pamięci lokalnej.
+- Informowanie o wieku danych.
 
-Dla każdej potencjalnej transakcji oblicz:
+Automatyczne odświeżanie oznacza wyłącznie ponowny odczyt i analizę danych. Nie może powodować żadnych działań w grze.
 
-- Cenę zakupu.
-- Szacowaną cenę sprzedaży.
-- Koszty wystawienia.
-- Potencjalny zysk netto.
-- Procentowy zwrot z inwestycji.
-- Ryzyko spadku ceny.
-- Szacowaną atrakcyjność inwestycji.
+Należy unikać nadmiernej liczby zapytań.
 
-### E. Rekomendowana cena sprzedaży
-
-System powinien proponować własną cenę sprzedaży.
-
-Nie zawsze musi to być najwyższa cena.
-
-Uwzględniaj:
-
-- Konkurencję.
-- Aktualny popyt.
-- Liczbę ofert.
-- Historię cen.
-- Przewidywany czas sprzedaży.
-- Oczekiwany zysk.
-
-## 4. Inteligencja i strategia
-
-Chcę, aby system zachowywał się jak doświadczony handlarz z wieloletnim doświadczeniem.
-
-Powinien rozpoznawać:
-
-- Okazje cenowe.
-- Przedmioty o dużym potencjale zysku.
-- Przedmioty o niskiej płynności.
-- Sztucznie zawyżone ceny.
-- Nietypowe zmiany rynku.
-- Przedmioty, których zakup jest zbyt ryzykowny.
-
-Nie kupuj ani nie rekomenduj zakupu każdego taniego przedmiotu.
-
-Priorytetem jest rzeczywisty potencjał zarobku, a nie sama różnica między ceną zakupu i sprzedaży.
-
-## 5. Zarządzanie kapitałem
-
-Uwzględnij system zarządzania budżetem.
-
-Trader powinien:
-
-- Kontrolować dostępny kapitał.
-- Szacować maksymalną kwotę inwestycji.
-- Unikać zamrażania całego kapitału w jednym przedmiocie.
-- Priorytetyzować najbardziej opłacalne okazje.
-- Uwzględniać ryzyko inwestycji.
-- Prowadzić historię zysków i strat.
-
-## 6. Interfejs użytkownika
-
-Zaprojektuj przejrzysty panel zawierający:
-
-1. Aktualny stan rynku.
-2. Najciekawsze okazje handlowe.
-3. Ranking najbardziej opłacalnych przedmiotów.
-4. Aktualne najniższe ceny.
-5. Sugerowane ceny sprzedaży.
-6. Kalkulator zysku.
-7. Historię cen.
-8. Historię transakcji wprowadzanych przez użytkownika.
-9. Statystyki kapitału i rentowności.
-
-Panel powinien być czytelny i przypominać profesjonalne narzędzie tradingowe.
-
-## 7. Bezpieczeństwo i wiarygodność danych
-
-- Nie zakładaj istnienia API bez jego potwierdzenia.
-- Nie wymyślaj cen ani danych rynkowych.
-- Oznaczaj dane nieaktualne.
-- Nie traktuj niepotwierdzonych ofert jako aktywnych.
-- Dbaj o bezpieczeństwo przechowywanych danych.
-- Nie zapisuj haseł ani danych logowania.
-- Weryfikuj poprawność i kompletność pozyskiwanych informacji.
-- Rozróżniaj dane rzeczywiste, historyczne i szacunkowe.
-
-## 8. Etapy realizacji
-
-Pracuj etapami.
-
-**ETAP 1 – RESEARCH**
-
-- Dokładnie poznaj M2Clicker.
-- Zbadaj targ i dostępne informacje o przedmiotach.
-- Przeanalizuj mechanizmy handlu.
-- Oceń techniczne możliwości projektu.
-- Zidentyfikuj dostępne źródła danych i ograniczenia.
-
-**ETAP 2 – ARCHITEKTURA**
-
-- Wybierz najlepszą formę programu.
-- Dobierz technologie.
-- Zaprojektuj strukturę projektu.
-- Przedstaw schemat działania.
-
-**ETAP 3 – ANALIZA RYNKU**
-
-- Zaimplementuj pozyskiwanie danych.
-- Stwórz bazę przedmiotów.
-- Stwórz system monitorowania cen.
-- Zaimplementuj historię rynku.
-
-**ETAP 4 – SILNIK TRADINGOWY**
-
-- Zaimplementuj algorytm wyceny.
-- Stwórz wykrywanie okazji.
-- Dodaj kalkulator zysków.
-- Dodaj ranking okazji.
-- Zaimplementuj zarządzanie kapitałem.
-
-**ETAP 5 – INTERFEJS**
-
-- Stwórz profesjonalny panel.
-- Dodaj statystyki.
-- Dodaj powiadomienia o okazjach.
-- Dodaj konfigurację strategii.
-
-**ETAP 6 – TESTY**
-
-- Przetestuj algorytmy na danych historycznych i przykładowych.
-- Sprawdź poprawność wyceny.
-- Przetestuj sytuacje nietypowe.
-- Sprawdź stabilność systemu.
-- Zweryfikuj wszystkie obliczenia.
-
-## 9. Sposób pracy
-
-Nie próbuj tworzyć całego projektu w jednym kroku.
-
-Najpierw przeprowadź research i przedstaw wnioski.
-
-Następnie zaproponuj architekturę i uzasadnij wybór.
-
-Po zaakceptowaniu architektury rozpocznij implementację.
-
-Pisz kompletny, działający kod. Nie pozostawiaj pustych funkcji, atrap ani fikcyjnych integracji.
-
-Dokumentuj strukturę projektu i sposób uruchomienia.
-
-Każdy etap powinien kończyć się testami.
-
-## 10. Najważniejszy priorytet
-
-Chcę otrzymać możliwie najbardziej zaawansowany system analizy i handlu przedmiotami w M2Clicker.
-
-Nie interesuje mnie prosty skrypt sprawdzający kilka cen.
-
-Chcę inteligentnego TRADERA, który:
-
-- Zna rynek.
-- Analizuje ceny.
-- Rozpoznaje okazje.
-- Ocenia ryzyko.
-- Oblicza potencjalny zysk.
-- Proponuje najlepsze decyzje handlowe.
-- Systematycznie doskonali swoją strategię na podstawie zgromadzonych danych.
-
-Podejmuj samodzielne decyzje techniczne, kierując się jakością, stabilnością i skutecznością rozwiązania.
-
-**Zacznij od ETAPU 1 – RESEARCH. Nie pisz jeszcze kodu. Najpierw poznaj grę i przedstaw kompletny plan realizacji projektu.**
+## 7. Architektura projektu
+
+Projekt powinien być podzielony na niezależne moduły:
+
+- **MarketScanner** – odczytywanie dostępnych ofert.
+- **ItemMatcher** – identyfikacja i dopasowywanie przedmiotów.
+- **PriceAnalyzer** – analiza cen i wyszukiwanie minimum.
+- **MarketCache** – przechowywanie ostatnich wyników.
+- **DescriptionInjector** – wyświetlanie informacji w opisach przedmiotów.
+- **Settings** – konfiguracja działania dodatku.
+
+Każdy moduł powinien odpowiadać za jedną konkretną funkcję.
+
+## 8. Bezpieczeństwo i stabilność
+
+- Nie modyfikuj mechaniki gry.
+- Nie ingeruj w system transakcji.
+- Nie wykonuj operacji zapisu w systemach gry.
+- Nie wysyłaj nieautoryzowanych żądań.
+- Korzystaj wyłącznie z dostępnych i dozwolonych metod odczytu informacji.
+- Nie zakładaj z góry struktury danych gry – najpierw przeanalizuj dostępne źródła danych.
+- Obsługuj błędy i brak danych.
+- Nie blokuj działania oryginalnego interfejsu gry.
+
+## 9. Jakość kodu
+
+Podczas pracy nad projektem:
+- Pisz czytelny, modularny kod.
+- Unikaj niepotrzebnego komplikowania architektury.
+- Nie duplikuj funkcjonalności.
+- Oddziel logikę analizy rynku od interfejsu użytkownika.
+- Dbaj o wydajność.
+- Komentuj istotne fragmenty kodu.
+- Nie zmieniaj istniejących funkcjonalności bez uzasadnienia.
+- Przed modyfikacją istniejących plików analizuj ich aktualną zawartość.
+
+## 10. Zasady pracy Claude
+
+Przed rozpoczęciem implementacji:
+1. Przeanalizuj strukturę projektu.
+2. Ustal, w jaki sposób M2Clicker udostępnia informacje o rynku i przedmiotach.
+3. Zidentyfikuj sposób odczytu ofert bez ingerencji w mechanikę gry.
+4. Sprawdź, w jaki sposób można rozszerzyć opisy przedmiotów.
+5. Zaproponuj architekturę dopasowaną do istniejącego projektu.
+
+Nie twórz fikcyjnych endpointów ani nie zakładaj istnienia API, którego nie potwierdzono.
+
+Jeśli jakiś element jest niemożliwy do zrealizowania na podstawie dostępnych danych, poinformuj o tym i zaproponuj bezpieczne rozwiązanie.
+
+## 11. Priorytet projektu
+
+Priorytety podczas developmentu:
+
+1. Poprawne odczytywanie ofert rynkowych.
+2. Prawidłowe rozpoznawanie przedmiotów.
+3. Dokładne wyszukiwanie najniższej ceny.
+4. Wyświetlanie ceny bezpośrednio w opisie przedmiotu.
+5. Stabilność i wydajność.
+6. Estetyka interfejsu.
+
+**Główna zasada: M2Clicker Market Scanner ma być narzędziem informacyjnym, które pomaga graczowi podejmować decyzje handlowe, ale nigdy nie podejmuje ani nie wykonuje tych decyzji za niego.**
