@@ -111,6 +111,8 @@ Wymaga decyzji użytkownika.
 
 ## Do decyzji (z użytkownikiem)
 1. Wariant pozyskiwania danych: A / B / C (patrz wyżej).
-2. Co znaczy „ten sam przedmiot" przy porównywaniu cen: (a) tylko `itemVnum`, (b) `itemVnum` + `skillVnum` (księgi) +
-   te same bonusy, (c) inaczej. Od tego zależy, czy „najniższa cena" w opisie jest uczciwa.
+2. ~~Co znaczy „ten sam przedmiot"~~ – **DECYZJA użytkownika (2026-11-03): bonusy przedmiotów (`preview.attributes`) NIE są brane pod uwagę
+   przy porównywaniu cen.** Klucz porównania = `itemVnum`. Do potwierdzenia z użytkownikiem: czy dodatkowo rozróżniać
+   `instanceMetadata.skillVnum` (vnum 50300 występuje z różnymi wartościami – najpewniej różne księgi umiejętności).
+   Skoro bonusy są pomijane, w opisie warto zaznaczyć, że cena dotyczy przedmiotów o tym samym numerze niezależnie od bonusów.
 3. Co pokazujemy, gdy widzimy tylko część rynku (np. jedną stronę): sekcja musi to jasno komunikować (zasada: brak danych != cena zero).

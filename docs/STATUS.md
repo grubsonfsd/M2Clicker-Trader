@@ -14,6 +14,10 @@ Do ustalenia (brakuje próbek danych):
 3. HTML tooltipa/opisu przedmiotu.
 4. Zasady gry dot. dodatków i częstotliwości odczytu.
 
+## Decyzje użytkownika
+- Bonusy przedmiotów NIE są brane pod uwagę przy porównywaniu cen (klucz porównania = `itemVnum`; `skillVnum` księg do potwierdzenia).
+- Wariant pozyskiwania danych (A/B/C): oczekuje na decyzję (rekomendacja po próbce JSON: B).
+
 ## Następne kroki
 - [x] Probe na stronie rynku.
 - [ ] Próbki: odpowiedź `market/offers` (jest: `samples/market-offers.json`), HTML wiersza (jest: `samples/offer-row.html`), HTML tooltipa (jest: `samples/tooltip.html`). Brakuje jeszcze adresów żądań z filtrem i kursorem (nazwy parametrów).
