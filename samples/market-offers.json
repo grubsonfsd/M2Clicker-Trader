@@ -1,0 +1,727 @@
+{
+  "offers": [
+    {
+      "id": "66b54f0d-8e07-4cc1-831f-a08aadb52ac3",
+      "isOwn": false,
+      "sellerName": "seller1",
+      "itemVnum": 2000,
+      "quantity": 1,
+      "unitPriceYang": "1",
+      "totalPriceYang": "1",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T05:25:53.003Z",
+      "expiresAt": "2026-11-04T05:25:53.003Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "c7881795-8ba7-49aa-b21a-a0121f2f2d87",
+        "itemVnum": 2000,
+        "count": 1,
+        "attributes": [
+          {
+            "slot": 0,
+            "apply": "ATTBONUS_UNDEAD",
+            "value": 6
+          }
+        ],
+        "sockets": [
+          {
+            "state": "CLOSED"
+          },
+          {
+            "state": "CLOSED"
+          },
+          {
+            "state": "CLOSED"
+          }
+        ],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "25e40569-6c66-4f5a-83ee-4e933ccb0aed",
+      "isOwn": false,
+      "sellerName": "seller2",
+      "itemVnum": 27001,
+      "quantity": 68031,
+      "unitPriceYang": "20",
+      "totalPriceYang": "1360620",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T09:07:11.284Z",
+      "expiresAt": "2026-11-04T09:07:11.284Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "cfd6ff31-c727-4c6c-a9ae-b966ef12004d",
+        "itemVnum": 27001,
+        "count": 68031,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "5a422166-f50c-40c3-bae0-4335a454d356",
+      "isOwn": false,
+      "sellerName": "seller3",
+      "itemVnum": 27001,
+      "quantity": 99750,
+      "unitPriceYang": "20",
+      "totalPriceYang": "1995000",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T08:49:53.266Z",
+      "expiresAt": "2026-11-04T08:49:53.266Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "4463f7d4-ce1b-4d08-abf6-6ce4237d5f33",
+        "itemVnum": 27001,
+        "count": 99750,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "ce17aa2d-f1af-41ce-b459-00fabb34d662",
+      "isOwn": false,
+      "sellerName": "seller4",
+      "itemVnum": 27001,
+      "quantity": 87930,
+      "unitPriceYang": "23",
+      "totalPriceYang": "2022390",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T08:11:53.651Z",
+      "expiresAt": "2026-11-04T08:11:53.651Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "062371c3-6257-46f7-b889-85874f5b2568",
+        "itemVnum": 27001,
+        "count": 87930,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "09618c54-c435-498f-b447-32f4fa910677",
+      "isOwn": false,
+      "sellerName": "seller3",
+      "itemVnum": 27004,
+      "quantity": 24330,
+      "unitPriceYang": "45",
+      "totalPriceYang": "1094850",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T08:52:06.359Z",
+      "expiresAt": "2026-11-04T08:52:06.359Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "c0a666a6-faf0-456c-a140-01dd042a795e",
+        "itemVnum": 27004,
+        "count": 24330,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "c2667587-76aa-40ce-aa59-12f0de08331c",
+      "isOwn": false,
+      "sellerName": "seller5",
+      "itemVnum": 27004,
+      "quantity": 16214,
+      "unitPriceYang": "45",
+      "totalPriceYang": "729630",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-02T13:22:55.197Z",
+      "expiresAt": "2026-11-03T13:22:55.197Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "3ffcc996-df3c-4916-ae59-c5891bcd4070",
+        "itemVnum": 27004,
+        "count": 16214,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "e9153a11-8654-4daa-8db5-773617eb4d76",
+      "isOwn": false,
+      "sellerName": "seller6",
+      "itemVnum": 27004,
+      "quantity": 84270,
+      "unitPriceYang": "46",
+      "totalPriceYang": "3876420",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T08:55:34.900Z",
+      "expiresAt": "2026-11-04T08:55:34.900Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "8003662c-e6d7-4158-a68d-fb0a3b0a2f46",
+        "itemVnum": 27004,
+        "count": 84270,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "8fbd922f-16a4-4410-a813-1c75d0ccf529",
+      "isOwn": false,
+      "sellerName": "seller6",
+      "itemVnum": 27002,
+      "quantity": 82352,
+      "unitPriceYang": "55",
+      "totalPriceYang": "4529360",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T08:41:38.733Z",
+      "expiresAt": "2026-11-04T08:41:38.733Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "cb23d80a-0482-42d8-b052-9915ac9c0181",
+        "itemVnum": 27002,
+        "count": 82352,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "cbe10795-08bc-4e25-ae43-8c355d1d828f",
+      "isOwn": false,
+      "sellerName": "seller3",
+      "itemVnum": 27002,
+      "quantity": 99998,
+      "unitPriceYang": "55",
+      "totalPriceYang": "5499890",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T08:50:57.065Z",
+      "expiresAt": "2026-11-04T08:50:57.065Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "4eb11e05-a617-4062-8e7d-c3e2e5ee6688",
+        "itemVnum": 27002,
+        "count": 99998,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "29a87220-762f-4327-be85-22d5ab786e15",
+      "isOwn": false,
+      "sellerName": "seller7",
+      "itemVnum": 27005,
+      "quantity": 7363,
+      "unitPriceYang": "73",
+      "totalPriceYang": "537499",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T09:59:35.262Z",
+      "expiresAt": "2026-11-04T09:59:35.262Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "14b9fe73-46f7-489d-83f4-4971a7853806",
+        "itemVnum": 27005,
+        "count": 7363,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "97aac787-8751-4a6b-b5f1-46bec52054d0",
+      "isOwn": false,
+      "sellerName": "seller8",
+      "itemVnum": 27005,
+      "quantity": 1900,
+      "unitPriceYang": "76",
+      "totalPriceYang": "144400",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T05:34:49.101Z",
+      "expiresAt": "2026-11-04T05:34:49.101Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "79b9547b-7cc9-4ad0-a528-352a75e1b1af",
+        "itemVnum": 27005,
+        "count": 1900,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "bb731d7b-8bc3-4d44-8f38-6d7adb4d75f4",
+      "isOwn": false,
+      "sellerName": "seller9",
+      "itemVnum": 27005,
+      "quantity": 2,
+      "unitPriceYang": "76",
+      "totalPriceYang": "152",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-02T22:44:07.441Z",
+      "expiresAt": "2026-11-03T22:44:07.441Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "60ee1be6-cb9b-4857-9b3c-1c8436025e1a",
+        "itemVnum": 27005,
+        "count": 2,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "ebdd1aaf-6da4-4c92-bd2d-733e48836a3a",
+      "isOwn": false,
+      "sellerName": "seller10",
+      "itemVnum": 27003,
+      "quantity": 2,
+      "unitPriceYang": "76",
+      "totalPriceYang": "152",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-02T18:23:46.013Z",
+      "expiresAt": "2026-11-03T18:23:46.013Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "729f3339-2bec-4a07-b1a9-907bbbb4aa41",
+        "itemVnum": 27003,
+        "count": 2,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "946d7ca7-a0dd-46c5-9535-ba8557f8c81f",
+      "isOwn": false,
+      "sellerName": "seller11",
+      "itemVnum": 27005,
+      "quantity": 55462,
+      "unitPriceYang": "77",
+      "totalPriceYang": "4270574",
+      "durationDays": 3,
+      "taxBasisPoints": 600,
+      "listedAt": "2026-11-02T08:35:28.096Z",
+      "expiresAt": "2026-11-05T08:35:28.096Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "9811a92f-3ab2-4b39-afa9-278eb5b2417b",
+        "itemVnum": 27005,
+        "count": 55462,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "2b9d9659-67b1-467b-94ea-b68100828a61",
+      "isOwn": false,
+      "sellerName": "seller3",
+      "itemVnum": 27003,
+      "quantity": 80000,
+      "unitPriceYang": "88",
+      "totalPriceYang": "7040000",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T08:51:21.879Z",
+      "expiresAt": "2026-11-04T08:51:21.879Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "beaa6f1a-96e2-42e4-9545-19c6b8e3d8eb",
+        "itemVnum": 27003,
+        "count": 80000,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "61b40467-4579-4ba3-93d9-753a9546a411",
+      "isOwn": false,
+      "sellerName": "seller6",
+      "itemVnum": 27003,
+      "quantity": 100000,
+      "unitPriceYang": "88",
+      "totalPriceYang": "8800000",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T09:32:21.081Z",
+      "expiresAt": "2026-11-04T09:32:21.081Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "9dfbdc4f-d1ec-4f33-88f6-0f8940c1a556",
+        "itemVnum": 27003,
+        "count": 100000,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "8c4d21ce-a55c-43b0-bd04-dfda4db1761b",
+      "isOwn": false,
+      "sellerName": "seller12",
+      "itemVnum": 50300,
+      "quantity": 1,
+      "unitPriceYang": "99",
+      "totalPriceYang": "99",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T10:13:39.674Z",
+      "expiresAt": "2026-11-04T10:13:39.674Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "c5d6610b-a02d-4d8a-80ac-0f1a94a0d40f",
+        "itemVnum": 50300,
+        "count": 1,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {
+          "skillVnum": 62
+        }
+      }
+    },
+    {
+      "id": "fb76b437-3ff4-4344-94eb-2ce461c05de5",
+      "isOwn": false,
+      "sellerName": "seller12",
+      "itemVnum": 50300,
+      "quantity": 1,
+      "unitPriceYang": "99",
+      "totalPriceYang": "99",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T10:15:14.617Z",
+      "expiresAt": "2026-11-04T10:15:14.617Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "cc2f86a7-9c13-41ed-b784-1d9c7f961a2a",
+        "itemVnum": 50300,
+        "count": 1,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {
+          "skillVnum": 108
+        }
+      }
+    },
+    {
+      "id": "bc4e5363-61a6-4274-a9da-888733b23d50",
+      "isOwn": false,
+      "sellerName": "seller13",
+      "itemVnum": 30037,
+      "quantity": 2,
+      "unitPriceYang": "100",
+      "totalPriceYang": "200",
+      "durationDays": 3,
+      "taxBasisPoints": 600,
+      "listedAt": "2026-10-31T12:02:23.974Z",
+      "expiresAt": "2026-11-03T12:02:23.974Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "f827f9c7-afea-41b4-a663-a3dba58ce5ab",
+        "itemVnum": 30037,
+        "count": 2,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "db7feeb4-a2c4-4088-859a-e7ac3d9b53f9",
+      "isOwn": false,
+      "sellerName": "seller14",
+      "itemVnum": 11610,
+      "quantity": 1,
+      "unitPriceYang": "100",
+      "totalPriceYang": "100",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T09:47:57.343Z",
+      "expiresAt": "2026-11-04T09:47:57.343Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "25beb541-5696-47a5-a438-e1d912dcf0db",
+        "itemVnum": 11610,
+        "count": 1,
+        "attributes": [],
+        "sockets": [
+          {
+            "state": "CLOSED"
+          },
+          {
+            "state": "CLOSED"
+          },
+          {
+            "state": "CLOSED"
+          }
+        ],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "f4b58cf1-1dc4-4e3e-bb85-75b87e1e5bce",
+      "isOwn": false,
+      "sellerName": "seller15",
+      "itemVnum": 30003,
+      "quantity": 2,
+      "unitPriceYang": "100",
+      "totalPriceYang": "200",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-02T13:38:19.658Z",
+      "expiresAt": "2026-11-03T13:38:19.658Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "beeec0f2-2c90-4ab8-a332-b42a47497c5d",
+        "itemVnum": 30003,
+        "count": 2,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "8c304e05-f6d8-4006-b29f-0e8706f73589",
+      "isOwn": false,
+      "sellerName": "seller16",
+      "itemVnum": 27005,
+      "quantity": 11765,
+      "unitPriceYang": "105",
+      "totalPriceYang": "1235325",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-02T12:16:51.777Z",
+      "expiresAt": "2026-11-03T12:16:51.777Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "8386e9a6-1e49-4d58-a09c-c5eb6a53ba44",
+        "itemVnum": 27005,
+        "count": 11765,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "6e08dae6-8051-48aa-9a16-1329f081d9d0",
+      "isOwn": false,
+      "sellerName": "seller17",
+      "itemVnum": 27006,
+      "quantity": 1055,
+      "unitPriceYang": "140",
+      "totalPriceYang": "147700",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T10:00:07.161Z",
+      "expiresAt": "2026-11-04T10:00:07.161Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "2aa1292a-5ea7-4023-9b8d-8b19cc5ed75c",
+        "itemVnum": 27006,
+        "count": 1055,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "92e4e644-30be-4358-95c3-301cfc446a6b",
+      "isOwn": false,
+      "sellerName": "seller18",
+      "itemVnum": 27006,
+      "quantity": 2095,
+      "unitPriceYang": "150",
+      "totalPriceYang": "314250",
+      "durationDays": 3,
+      "taxBasisPoints": 600,
+      "listedAt": "2026-11-02T20:44:00.296Z",
+      "expiresAt": "2026-11-05T20:44:00.296Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "77b07014-c067-4f8b-a53a-c7567f34e8bf",
+        "itemVnum": 27006,
+        "count": 2095,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "03ca661a-6d77-44b0-8da8-3b0407363f37",
+      "isOwn": false,
+      "sellerName": "seller14",
+      "itemVnum": 30041,
+      "quantity": 2,
+      "unitPriceYang": "200",
+      "totalPriceYang": "400",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T09:48:26.778Z",
+      "expiresAt": "2026-11-04T09:48:26.778Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "65e0cd54-9af8-4a35-abcc-e2308c189995",
+        "itemVnum": 30041,
+        "count": 2,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "077280d1-5994-4f39-882f-628af129ed8e",
+      "isOwn": false,
+      "sellerName": "seller1",
+      "itemVnum": 2012,
+      "quantity": 1,
+      "unitPriceYang": "200",
+      "totalPriceYang": "200",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T05:22:34.836Z",
+      "expiresAt": "2026-11-04T05:22:34.836Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "920bd334-3ddc-4529-a23b-fc13b939d7d5",
+        "itemVnum": 2012,
+        "count": 1,
+        "attributes": [],
+        "sockets": [
+          {
+            "state": "CLOSED"
+          },
+          {
+            "state": "CLOSED"
+          },
+          {
+            "state": "CLOSED"
+          }
+        ],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "10727778-2a3f-4cae-a670-3e68d0055505",
+      "isOwn": false,
+      "sellerName": "seller19",
+      "itemVnum": 30004,
+      "quantity": 3,
+      "unitPriceYang": "200",
+      "totalPriceYang": "600",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-02T14:30:22.780Z",
+      "expiresAt": "2026-11-03T14:30:22.780Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "597bbbc6-75ec-4df4-93ae-6c9988dec3f6",
+        "itemVnum": 30004,
+        "count": 3,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "11944279-2be2-47cf-b748-4427d8b4d7c8",
+      "isOwn": false,
+      "sellerName": "seller1",
+      "itemVnum": 4010,
+      "quantity": 1,
+      "unitPriceYang": "200",
+      "totalPriceYang": "200",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T05:22:50.698Z",
+      "expiresAt": "2026-11-04T05:22:50.698Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "2db840d5-d2be-4c6d-aa7d-452da76070c6",
+        "itemVnum": 4010,
+        "count": 1,
+        "attributes": [],
+        "sockets": [
+          {
+            "state": "CLOSED"
+          },
+          {
+            "state": "CLOSED"
+          },
+          {
+            "state": "CLOSED"
+          }
+        ],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "22a1160c-d0c4-4179-b1d9-3d955ebc4539",
+      "isOwn": false,
+      "sellerName": "seller1",
+      "itemVnum": 4011,
+      "quantity": 1,
+      "unitPriceYang": "200",
+      "totalPriceYang": "200",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T05:23:56.886Z",
+      "expiresAt": "2026-11-04T05:23:56.886Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "69a08ce0-a863-4bcd-afe4-64aa928c0432",
+        "itemVnum": 4011,
+        "count": 1,
+        "attributes": [],
+        "sockets": [
+          {
+            "state": "CLOSED"
+          },
+          {
+            "state": "CLOSED"
+          },
+          {
+            "state": "CLOSED"
+          }
+        ],
+        "instanceMetadata": {}
+      }
+    },
+    {
+      "id": "2364e0d7-5bce-464e-997b-e037ca037000",
+      "isOwn": false,
+      "sellerName": "seller12",
+      "itemVnum": 50300,
+      "quantity": 2,
+      "unitPriceYang": "200",
+      "totalPriceYang": "400",
+      "durationDays": 1,
+      "taxBasisPoints": 200,
+      "listedAt": "2026-11-03T10:13:30.303Z",
+      "expiresAt": "2026-11-04T10:13:30.303Z",
+      "status": "ACTIVE",
+      "preview": {
+        "id": "b5ee73fa-6e22-4bfd-9897-593738d709ac",
+        "itemVnum": 50300,
+        "count": 2,
+        "attributes": [],
+        "sockets": [],
+        "instanceMetadata": {
+          "skillVnum": 34
+        }
+      }
+    }
+  ],
+  "nextCursor": "2364e0d7-5bce-464e-997b-e037ca037000"
+}
